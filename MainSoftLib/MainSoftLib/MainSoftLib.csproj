@@ -76,6 +76,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainSoftLib.Compress\MainSoftLib.Compress.csproj">
+      <Project>{bbb76760-6833-4595-8944-9a199630cb97}</Project>
+      <Name>MainSoftLib.Compress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.TwoCaptchaApi\MainSoftLib.TwoCaptchaApi.csproj">
+      <Project>{a5c8d7b8-1c99-462d-a31a-e8bd953c7b12}</Project>
+      <Name>MainSoftLib.TwoCaptchaApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.WebMethods\MainSoftLib.Web.csproj">
+      <Project>{0e7f11f3-6174-4218-8a45-2f4ff4122517}</Project>
+      <Name>MainSoftLib.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.WebMethods", "MainSoftLib.WebMethods\MainSoftLib.WebMethods.csproj", "{0E7F11F3-6174-4218-8A45-2F4FF4122517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Web", "MainSoftLib.WebMethods\MainSoftLib.Web.csproj", "{0E7F11F3-6174-4218-8A45-2F4FF4122517}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib", "MainSoftLib\MainSoftLib.csproj", "{0BF5723B-B224-48A4-88CC-C3F0CE3C4F71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.TwoCaptchaApi", "MainSoftLib.TwoCaptchaApi\MainSoftLib.TwoCaptchaApi.csproj", "{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Compress", "MainSoftLib.Compress\MainSoftLib.Compress.csproj", "{BBB76760-6833-4595-8944-9A199630CB97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB76760-6833-4595-8944-9A199630CB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB76760-6833-4595-8944-9A199630CB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB76760-6833-4595-8944-9A199630CB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB76760-6833-4595-8944-9A199630CB97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MainSoftLib.WebMethods
+namespace MainSoftLib.Web
 {
     public class CookieWebClient : WebClient
     {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace MainSoftLib.WebMethods
+namespace MainSoftLib.Web
 {
     public class WebMethods
     {
