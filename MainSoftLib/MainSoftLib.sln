@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib", "MainSoftLib\MainSoftLib.csproj", "{1C155360-48C4-42B0-9D76-1F54ECBC9A69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Lib", "MainSoftLib.Lib\MainSoftLib.Lib.csproj", "{1C155360-48C4-42B0-9D76-1F54ECBC9A69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.WebMethods", "MainSoftLib.WebMethods\MainSoftLib.WebMethods.csproj", "{0E7F11F3-6174-4218-8A45-2F4FF4122517}"
 EndProject
