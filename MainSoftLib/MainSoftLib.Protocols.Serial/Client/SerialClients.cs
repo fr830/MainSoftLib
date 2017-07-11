@@ -98,24 +98,13 @@ namespace MainSoftLib.Protocols.Serial
 
                         m_isOpen = true;
 
-                        if (this.OnConnect != null)
-                        {
-                            this.OnConnect(Conexion);
-                        }
-
-                        //this.listenThread = new Thread(new ThreadStart(this.runListener));
-                        //this.listenThread.Start();
-                        //this.sendThread = new Thread(new ThreadStart(this.runSender));
-                        //this.sendThread.Start();
+                        this.OnConnect?.Invoke(Conexion);
                     }
                     catch (Exception ex)
                     {
                         m_isOpen = false;
 
-                        if (this.OnError != null)
-                        {
-                            this.OnError(Conexion, ex);
-                        }
+                        this.OnError?.Invoke(Conexion, ex);
                     }
                 }
             }
@@ -136,10 +125,7 @@ namespace MainSoftLib.Protocols.Serial
 
                         Conexion.Close();
 
-                        if (this.OnDisconect != null)
-                        {
-                            this.OnDisconect(Conexion);
-                        }
+                        this.OnDisconect?.Invoke(Conexion);
 
                         //Conexion = null;
                         GC.Collect();
@@ -148,10 +134,7 @@ namespace MainSoftLib.Protocols.Serial
             }
             catch (Exception ex)
             {
-                if (this.OnError != null)
-                {
-                    this.OnError(Conexion, ex);
-                }
+                this.OnError?.Invoke(Conexion, ex);
             }
         }
 
@@ -170,10 +153,7 @@ namespace MainSoftLib.Protocols.Serial
                 }
                 catch (Exception ex)
                 {
-                    if (this.OnError != null)
-                    {
-                        this.OnError(Conexion, ex);
-                    }
+                    this.OnError?.Invoke(Conexion, ex);
                 }
             }
         }
@@ -193,10 +173,7 @@ namespace MainSoftLib.Protocols.Serial
                 }
                 catch (Exception ex)
                 {
-                    if (this.OnError != null)
-                    {
-                        this.OnError(Conexion, ex);
-                    }
+                    this.OnError?.Invoke(Conexion, ex);
                 }
             }
         }
@@ -212,18 +189,12 @@ namespace MainSoftLib.Protocols.Serial
 
         void Conexion_PinChanged(object sender, SerialPinChangedEventArgs ex)
         {
-            if (this.OnPinChanged != null)
-            {
-                this.OnPinChanged(sender as SerialPort, ex);
-            }
+            this.OnPinChanged?.Invoke(sender as SerialPort, ex);
         }
 
         void Conexion_ErrorReceived(object sender, SerialErrorReceivedEventArgs ex)
         {
-            if (this.OnErrorReceived != null)
-            {
-                this.OnErrorReceived(sender as SerialPort, ex);
-            }
+            OnErrorReceived?.Invoke(sender as SerialPort, ex);
         }
 
         void Conexion_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -239,7 +210,7 @@ namespace MainSoftLib.Protocols.Serial
                     Message += Conexion.ReadExisting();
                 }
 
-                this.OnMessage(Conexion, Message);
+                OnMessage?.Invoke(Conexion, Message);
             }
         }        
     }

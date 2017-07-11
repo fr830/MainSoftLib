@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MainSoftLib.Protocols.Udp
+namespace MainSoftLib.Protocols.Tcp.ServerMultiport
 {
-    public class Class1
+    class TcpServerMultiportConnection
     {
     }
 }

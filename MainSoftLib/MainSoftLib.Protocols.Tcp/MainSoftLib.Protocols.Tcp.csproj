@@ -40,14 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\TcpClients.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Client\TcpClientsDelegate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerMultiport\TcpServerMultiport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServerMultiport\TcpServerMultiportConnection.cs" />
+    <Compile Include="ServerMultiport\TcpServerMultiportDelegate.cs" />
+    <Compile Include="Server\TcpServers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Server\TcpServersConnection.cs" />
+    <Compile Include="Server\TcpServersDelegate.cs" />
     <Compile Include="TcpMethods.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Client\" />
-    <Folder Include="ServerMultiport\" />
-    <Folder Include="Server\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

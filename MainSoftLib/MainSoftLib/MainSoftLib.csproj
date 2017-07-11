@@ -85,6 +85,50 @@
       <Project>{a5c8d7b8-1c99-462d-a31a-e8bd953c7b12}</Project>
       <Name>MainSoftLib.Captcha</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.DeviceInformation\MainSoftLib.DeviceInformation.csproj">
+      <Project>{702991d4-e31a-4309-a7ed-a902e5a113ff}</Project>
+      <Name>MainSoftLib.DeviceInformation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Encryption\MainSoftLib.Encryption.csproj">
+      <Project>{68057037-601d-4b9c-8f81-1c2d39ff61ee}</Project>
+      <Name>MainSoftLib.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Extension\MainSoftLib.Extension.csproj">
+      <Project>{3ab1bb41-0e7e-4fc8-9ae9-84049071fe99}</Project>
+      <Name>MainSoftLib.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Logs\MainSoftLib.Logs.csproj">
+      <Project>{bb3fd378-7fbf-4587-893e-c47be1fe0668}</Project>
+      <Name>MainSoftLib.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Password\MainSoftLib.Password.csproj">
+      <Project>{b17a0697-5bde-4b85-899b-bbaf85ec8018}</Project>
+      <Name>MainSoftLib.Password</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Protocols.Serial\MainSoftLib.Protocols.Serial.csproj">
+      <Project>{31ea611d-0128-4c65-8e5c-f7ae076a4a1c}</Project>
+      <Name>MainSoftLib.Protocols.Serial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Protocols.Tcp\MainSoftLib.Protocols.Tcp.csproj">
+      <Project>{45c44429-4861-431e-b514-3124d2652d60}</Project>
+      <Name>MainSoftLib.Protocols.Tcp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Protocols.Udp\MainSoftLib.Protocols.Udp.csproj">
+      <Project>{4e783a73-e972-4e6d-a165-cde1c3cd968b}</Project>
+      <Name>MainSoftLib.Protocols.Udp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Regedit\MainSoftLib.Regedit.csproj">
+      <Project>{bddbc9c4-68dc-4429-beb9-696042f68d15}</Project>
+      <Name>MainSoftLib.Regedit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Structure\MainSoftLib.Structure.csproj">
+      <Project>{5514515f-f49a-4de8-b60d-af47ad6f5b7f}</Project>
+      <Name>MainSoftLib.Structure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Validation\MainSoftLib.Validation.csproj">
+      <Project>{84730d62-9f13-4661-aa28-af86827d8c69}</Project>
+      <Name>MainSoftLib.Validation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.WebMethods\MainSoftLib.Web.csproj">
       <Project>{0e7f11f3-6174-4218-8a45-2f4ff4122517}</Project>
       <Name>MainSoftLib.Web</Name>
