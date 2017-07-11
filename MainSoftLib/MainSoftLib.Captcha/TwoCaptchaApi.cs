@@ -24,6 +24,7 @@ namespace MainSoftLib.Captcha
 
         public float getBalance()
         {
+            float balance = -1;
             string response = "";
 
             using (WebClient client = new WebClient())
@@ -32,8 +33,6 @@ namespace MainSoftLib.Captcha
                 client.QueryString.Add("action", "getbalance");
                 response = client.DownloadString(url_response);
             }
-
-            float balance = -1;
 
             if (!float.TryParse(response, out balance))
             {
@@ -69,14 +68,7 @@ namespace MainSoftLib.Captcha
             return response.Remove(0, 3);
         }
 
-        public string solveCaptcha(string path)
-        {
-            captchaId = uploadCaptcha(path);
-            Thread.Sleep(10 * 1000);
-            return getResult(captchaId);
-        }
-
-        public string uploadCaptcha(string path)
+        public string uploadCaptcha(string path, Dictionary<string, string> param = null)
         {
             if (!File.Exists(path))
             {
@@ -88,10 +80,18 @@ namespace MainSoftLib.Captcha
 
             using (WebClient client = new WebClient())
             {
-
                 client.QueryString.Add("key", key);
+
+                if (param!=null)
+                {
+                    foreach (var item in param)
+                    {
+                        client.QueryString.Add(item.Key, item.Value);
+                    }
+                }
+                               
                 //client.QueryString.Add("phrase", "1");
-                client.QueryString.Add("numeric", "1");
+                //client.QueryString.Add("numeric", "1");
                 //client.QueryString.Add("min_len", "5");
                 //client.QueryString.Add("max_len", "5");
 
@@ -134,6 +134,13 @@ namespace MainSoftLib.Captcha
             }
             
             throw new Exception($"Captcha solve error: {response}");
+        }
+
+        public string solveCaptcha(string path)
+        {
+            captchaId = uploadCaptcha(path);
+            Thread.Sleep(10 * 1000);
+            return getResult(captchaId);
         }
 
         public bool reportBadCaptcha(string captchaId)
