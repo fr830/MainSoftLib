@@ -35,7 +35,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Protocols.Udp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.Sqlite", "MainSoftLib.Database.Sqlite\MainSoftLib.Database.Sqlite.csproj", "{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.MySql", "MainSoftLib.Lib\MainSoftLib.Database.MySql.csproj", "{1C155360-48C4-42B0-9D76-1F54ECBC9A69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.MySql", "MainSoftLib.Database.MySql\MainSoftLib.Database.MySql.csproj", "{1C155360-48C4-42B0-9D76-1F54ECBC9A69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
