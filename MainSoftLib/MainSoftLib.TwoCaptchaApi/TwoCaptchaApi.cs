@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MainSoftLib.TwoCaptchaApi
+namespace MainSoftLib.Captcha
 {
     public class TwoCaptchaApi
     {

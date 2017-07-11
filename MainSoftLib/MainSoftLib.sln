@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Web", "MainSoft
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib", "MainSoftLib\MainSoftLib.csproj", "{0BF5723B-B224-48A4-88CC-C3F0CE3C4F71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.TwoCaptchaApi", "MainSoftLib.TwoCaptchaApi\MainSoftLib.TwoCaptchaApi.csproj", "{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Captcha", "MainSoftLib.TwoCaptchaApi\MainSoftLib.Captcha.csproj", "{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Compress", "MainSoftLib.Compress\MainSoftLib.Compress.csproj", "{BBB76760-6833-4595-8944-9A199630CB97}"
 EndProject
