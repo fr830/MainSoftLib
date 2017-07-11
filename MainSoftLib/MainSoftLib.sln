@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Protocols.Seria
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Protocols.Udp", "MainSoftLib.Protocols.Udp\MainSoftLib.Protocols.Udp.csproj", "{4E783A73-E972-4E6D-A165-CDE1C3CD968B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.Sqlite", "MainSoftLib.Database.Sqlite\MainSoftLib.Database.Sqlite.csproj", "{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{4E783A73-E972-4E6D-A165-CDE1C3CD968B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E783A73-E972-4E6D-A165-CDE1C3CD968B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E783A73-E972-4E6D-A165-CDE1C3CD968B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C6F07B-9630-4A82-A90C-D4DA09F08A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
