@@ -14,7 +14,7 @@ using MainSoftLib.PayuLatam.Entities.Order;
 using MainSoftLib.PayuLatam.Entities.Transaction;
 using MainSoftLib.PayuLatam.Entities.Payment;
 
-namespace PayuLatamSharp.Factories
+namespace MainSoftLib.PayuLatam.Factories
 {
     public class PayuLatamFactory
     {

@@ -1,5 +1,5 @@
 ﻿using MainSoftLib.PayuLatam.Entities.Payment;
-using PayuLatamSharp.Factories;
+using MainSoftLib.PayuLatam.Factories;
 using System;
 using System.Windows.Forms;
 
