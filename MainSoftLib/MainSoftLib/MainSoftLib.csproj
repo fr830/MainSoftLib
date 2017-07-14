@@ -75,10 +75,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPayuLatam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPayuLatam.Designer.cs">
+      <DependentUpon>FrmPayuLatam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPayuLatam.resx">
+      <DependentUpon>FrmPayuLatam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +144,10 @@
     <ProjectReference Include="..\MainSoftLib.Password\MainSoftLib.Password.csproj">
       <Project>{b17a0697-5bde-4b85-899b-bbaf85ec8018}</Project>
       <Name>MainSoftLib.Password</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Payu\MainSoftLib.PayuLatam.csproj">
+      <Project>{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}</Project>
+      <Name>MainSoftLib.PayuLatam</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Protocols.Serial\MainSoftLib.Protocols.Serial.csproj">
       <Project>{31ea611d-0128-4c65-8e5c-f7ae076a4a1c}</Project>
