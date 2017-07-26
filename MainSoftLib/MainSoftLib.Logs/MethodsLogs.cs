@@ -16,7 +16,7 @@ namespace MainSoftLib.Logs
             fileName = _fileName;
         }
 
-        public void EscribirLog(string logText)
+        public void WriteLog(string logText)
         {
             try
             {
@@ -25,10 +25,13 @@ namespace MainSoftLib.Logs
                     w.WriteLine(DateTime.Now.ToString() + " - " + logText);
                 }
             }
-            catch { }
+            catch
+            {
+
+            }
         }
 
-        public void EscribirLog(Exception ex)
+        public void WriteLog(Exception ex)
         {
             try
             {
@@ -44,10 +47,13 @@ namespace MainSoftLib.Logs
                     w.WriteLine("--------------------------------------------------------------------------------");
                 }
             }
-            catch { }
+            catch
+            {
+
+            }
         }
 
-        public void EscribirLog(string Caller, string Method, TypeLog Type, Exception ex)
+        public void WriteLog(string Caller, string Method, TypeLog Type, Exception ex)
         {
             try
             {
@@ -66,10 +72,13 @@ namespace MainSoftLib.Logs
                     w.WriteLine("--------------------------------------------------------------------------------");
                 }
             }
-            catch { }
+            catch
+            {
+
+            }
         }
 
-        public void EscribirLog(string Caller, string Method, TypeLog Type, string ex)
+        public void WriteLog(string Caller, string Method, TypeLog Type, string ex)
         {
             try
             {
@@ -84,7 +93,10 @@ namespace MainSoftLib.Logs
                     w.WriteLine("--------------------------------------------------------------------------------");
                 }
             }
-            catch { }
+            catch
+            {
+
+            }
         }
     }
 
