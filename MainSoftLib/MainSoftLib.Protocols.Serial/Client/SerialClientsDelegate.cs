@@ -9,6 +9,8 @@ namespace MainSoftLib.Protocols.Serial.Client
 {
     public delegate void SerialClientsConnectionChanged(SerialPort Connection);
 
+    public delegate void SerialClientsConnectionData(SerialPort Connection, byte[] Data);
+
     public delegate void SerialClientsConnectionMessage(SerialPort Connection, string Message);
 
     public delegate void SerialClientsError(SerialPort Connection, Exception Ex);

@@ -16,7 +16,7 @@ namespace MainSoftLib
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPayuLatam());
+            Application.Run(new Form1());
         }
     }
 }

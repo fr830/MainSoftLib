@@ -30,6 +30,7 @@ namespace MainSoftLib.Protocols.Serial
         public event SerialClientsConnectionChanged OnConnect;
         public event SerialClientsConnectionChanged OnDisconect;
         public event SerialClientsConnectionMessage OnMessage;
+        public event SerialClientsConnectionData OnData;
         public event SerialClientsError OnError;
         public event SerialClientsPinChangedEventArgs OnPinChanged;
         public event SerialClientsErrorReceivedEventArgs OnErrorReceived;
@@ -199,18 +200,29 @@ namespace MainSoftLib.Protocols.Serial
 
         void Conexion_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            if (OnMessage != null)
+            try
             {
-                Thread.Sleep(250);
-
-                string Message = Conexion.ReadExisting();
-
-                if (Conexion.BytesToRead > 0)
+                if (OnMessage != null || OnData != null)
                 {
-                    Message += Conexion.ReadExisting();
-                }
+                    Thread.Sleep(250);
 
-                OnMessage?.Invoke(Conexion, Message);
+                    if (Conexion.BytesToRead > 0)
+                    {
+                        int count = Conexion.BytesToRead;
+                        byte[] Data = new byte[count];
+
+                        Conexion.Read(Data, 0, count);
+
+                        string Message = Encoding.ASCII.GetString(Data, 0, Data.Length);
+
+                        OnData?.Invoke(Conexion, Data);
+                        OnMessage?.Invoke(Conexion, Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                OnError?.Invoke(Conexion, ex);            
             }
         }        
     }

@@ -245,10 +245,7 @@ namespace MainSoftLib.Protocols.Tcp.Client
                                 }
                                 catch (Exception ex)
                                 {
-                                    if (this.OnError != null)
-                                    {
-                                        this.OnError(this, ex);
-                                    }
+                                    this.OnError?.Invoke(this, ex);
                                 }
                             }
 
