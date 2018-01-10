@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using Newtonsoft.Json;
 using System.Net.Security;
 
 using System.Security.Cryptography;
@@ -13,6 +12,7 @@ using MainSoftLib.PayuLatam.Entities.Ping;
 using MainSoftLib.PayuLatam.Entities.Order;
 using MainSoftLib.PayuLatam.Entities.Transaction;
 using MainSoftLib.PayuLatam.Entities.Payment;
+using Newtonsoft.Json;
 
 namespace MainSoftLib.PayuLatam.Factories
 {

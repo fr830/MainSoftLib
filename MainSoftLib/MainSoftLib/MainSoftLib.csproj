@@ -121,6 +121,10 @@
       <Project>{a5c8d7b8-1c99-462d-a31a-e8bd953c7b12}</Project>
       <Name>MainSoftLib.Captcha</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Database.MySql\MainSoftLib.Database.MySql.csproj">
+      <Project>{1c155360-48c4-42b0-9d76-1f54ecbc9a69}</Project>
+      <Name>MainSoftLib.Database.MySql</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Database.Sqlite\MainSoftLib.Database.Sqlite.csproj">
       <Project>{b5c6f07b-9630-4a82-a90c-d4da09f08a4e}</Project>
       <Name>MainSoftLib.Database.Sqlite</Name>
@@ -146,7 +150,7 @@
       <Name>MainSoftLib.Password</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.PayuLatam\MainSoftLib.PayuLatam.csproj">
-      <Project>{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}</Project>
+      <Project>{ab83edda-f3cf-40c7-b62d-8475251dfcea}</Project>
       <Name>MainSoftLib.PayuLatam</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Protocols.Serial\MainSoftLib.Protocols.Serial.csproj">
