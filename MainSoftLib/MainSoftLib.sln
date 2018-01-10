@@ -39,7 +39,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.MySql"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.PayuLatam", "MainSoftLib.PayuLatam\MainSoftLib.PayuLatam.csproj", "{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Database.SqlServer", "MainSoftLib.Database.SqlServer\MainSoftLib.Database.SqlServer.csproj", "{EBFD8ED9-AAA6-430F-BDFD-BFEC4FE2E39F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{658BAB5A-2B47-4E86-93E3-C13E1DAD6EDC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,10 +124,6 @@ Global
 		{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDEA991B-EE5A-4DE6-9BE2-9FC512D97541}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBFD8ED9-AAA6-430F-BDFD-BFEC4FE2E39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBFD8ED9-AAA6-430F-BDFD-BFEC4FE2E39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBFD8ED9-AAA6-430F-BDFD-BFEC4FE2E39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBFD8ED9-AAA6-430F-BDFD-BFEC4FE2E39F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
