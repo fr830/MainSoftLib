@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.PayuLatam", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.MathExpressions", "MainSoftLib.MathExpressions\MainSoftLib.MathExpressions.csproj", "{B6813448-FCE2-429C-81B5-9722FEA839B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Image", "MainSoftLib.Image\MainSoftLib.Image.csproj", "{B6D62536-9092-4309-9A36-D173012F0156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -286,6 +288,18 @@ Global
 		{B6813448-FCE2-429C-81B5-9722FEA839B8}.Release|x64.Build.0 = Release|x64
 		{B6813448-FCE2-429C-81B5-9722FEA839B8}.Release|x86.ActiveCfg = Release|x86
 		{B6813448-FCE2-429C-81B5-9722FEA839B8}.Release|x86.Build.0 = Release|x86
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|x64.Build.0 = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Debug|x86.Build.0 = Debug|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x64.ActiveCfg = Release|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x64.Build.0 = Release|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x86.ActiveCfg = Release|Any CPU
+		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
