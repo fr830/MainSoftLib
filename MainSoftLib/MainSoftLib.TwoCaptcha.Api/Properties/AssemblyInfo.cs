@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
 [assembly: AssemblyTitle("MainSoftLib.TwoCaptcha.Api")]
-[assembly: AssemblyDescription("MainSoftLib.TwoCaptcha.Api")]
+[assembly: AssemblyDescription("Library 2Captcha Api")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MainSoft Technology")]
 [assembly: AssemblyProduct("MainSoftLib.TwoCaptcha.Api")]
