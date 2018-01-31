@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Web", "MainSoft
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib", "MainSoftLib\MainSoftLib.csproj", "{0BF5723B-B224-48A4-88CC-C3F0CE3C4F71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Captcha", "MainSoftLib.Captcha\MainSoftLib.Captcha.csproj", "{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.TwoCaptcha.Api", "MainSoftLib.Captcha\MainSoftLib.TwoCaptcha.Api.csproj", "{A5C8D7B8-1C99-462D-A31A-E8BD953C7B12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Compress", "MainSoftLib.Compress\MainSoftLib.Compress.csproj", "{BBB76760-6833-4595-8944-9A199630CB97}"
 EndProject
@@ -49,6 +49,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.MathExpressions", "MainSoftLib.MathExpressions\MainSoftLib.MathExpressions.csproj", "{B6813448-FCE2-429C-81B5-9722FEA839B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Image", "MainSoftLib.Image\MainSoftLib.Image.csproj", "{B6D62536-9092-4309-9A36-D173012F0156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSoftLib.Captcha.Solver", "MainSoftLib.Captcha.Solver\MainSoftLib.Captcha.Solver.csproj", "{97E86512-65E9-4EDC-B87C-3E3948606A27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -300,6 +302,18 @@ Global
 		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x64.Build.0 = Release|Any CPU
 		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x86.ActiveCfg = Release|Any CPU
 		{B6D62536-9092-4309-9A36-D173012F0156}.Release|x86.Build.0 = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|x64.Build.0 = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Debug|x86.Build.0 = Debug|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|x64.ActiveCfg = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|x64.Build.0 = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|x86.ActiveCfg = Release|Any CPU
+		{97E86512-65E9-4EDC-B87C-3E3948606A27}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

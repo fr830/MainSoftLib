@@ -75,6 +75,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FromCaptchaSolver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromCaptchaSolver.Designer.cs">
+      <DependentUpon>FromCaptchaSolver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPayuLatam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromCaptchaSolver.resx">
+      <DependentUpon>FromCaptchaSolver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPayuLatam.resx">
       <DependentUpon>FrmPayuLatam.cs</DependentUpon>
@@ -113,13 +131,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MainSoftLib.Captcha.Solver\MainSoftLib.Captcha.Solver.csproj">
+      <Project>{97e86512-65e9-4edc-b87c-3e3948606a27}</Project>
+      <Name>MainSoftLib.Captcha.Solver</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Compress\MainSoftLib.Compress.csproj">
       <Project>{bbb76760-6833-4595-8944-9a199630cb97}</Project>
       <Name>MainSoftLib.Compress</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MainSoftLib.Captcha\MainSoftLib.Captcha.csproj">
+    <ProjectReference Include="..\MainSoftLib.Captcha\MainSoftLib.TwoCaptcha.Api.csproj">
       <Project>{a5c8d7b8-1c99-462d-a31a-e8bd953c7b12}</Project>
-      <Name>MainSoftLib.Captcha</Name>
+      <Name>MainSoftLib.TwoCaptcha.Api</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Database.MySql\MainSoftLib.Database.MySql.csproj">
       <Project>{1c155360-48c4-42b0-9d76-1f54ecbc9a69}</Project>
@@ -141,9 +163,17 @@
       <Project>{3ab1bb41-0e7e-4fc8-9ae9-84049071fe99}</Project>
       <Name>MainSoftLib.Extension</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.Image\MainSoftLib.Image.csproj">
+      <Project>{b6d62536-9092-4309-9a36-d173012f0156}</Project>
+      <Name>MainSoftLib.Image</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Logs\MainSoftLib.Logs.csproj">
       <Project>{bb3fd378-7fbf-4587-893e-c47be1fe0668}</Project>
       <Name>MainSoftLib.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainSoftLib.MathExpressions\MainSoftLib.MathExpressions.csproj">
+      <Project>{b6813448-fce2-429c-81b5-9722fea839b8}</Project>
+      <Name>MainSoftLib.MathExpressions</Name>
     </ProjectReference>
     <ProjectReference Include="..\MainSoftLib.Password\MainSoftLib.Password.csproj">
       <Project>{b17a0697-5bde-4b85-899b-bbaf85ec8018}</Project>
