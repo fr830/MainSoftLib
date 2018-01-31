@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("MainSoftLib.Captcha")]
-[assembly: AssemblyDescription("MainSoftLib.Captcha")]
+[assembly: AssemblyTitle("MainSoftLib.TwoCaptcha.Api")]
+[assembly: AssemblyDescription("MainSoftLib.TwoCaptcha.Api")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MainSoft Technology")]
-[assembly: AssemblyProduct("MainSoftLib.Captcha")]
+[assembly: AssemblyProduct("MainSoftLib.TwoCaptcha.Api")]
 [assembly: AssemblyCopyright("Copyright © MainSoft Technology 2016-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

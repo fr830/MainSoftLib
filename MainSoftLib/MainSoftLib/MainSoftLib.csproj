@@ -139,7 +139,7 @@
       <Project>{bbb76760-6833-4595-8944-9a199630cb97}</Project>
       <Name>MainSoftLib.Compress</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MainSoftLib.Captcha\MainSoftLib.TwoCaptcha.Api.csproj">
+    <ProjectReference Include="..\MainSoftLib.TwoCaptcha.Api\MainSoftLib.TwoCaptcha.Api.csproj">
       <Project>{a5c8d7b8-1c99-462d-a31a-e8bd953c7b12}</Project>
       <Name>MainSoftLib.TwoCaptcha.Api</Name>
     </ProjectReference>
