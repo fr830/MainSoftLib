@@ -75,6 +75,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmImageCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImageCompare.Designer.cs">
+      <DependentUpon>FrmImageCompare.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromCaptchaSolver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImageCompare.resx">
+      <DependentUpon>FrmImageCompare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromCaptchaSolver.resx">
       <DependentUpon>FromCaptchaSolver.cs</DependentUpon>

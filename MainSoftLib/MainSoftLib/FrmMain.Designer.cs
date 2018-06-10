@@ -289,8 +289,9 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(102, 33);
             this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
+            this.button7.Text = "Image Compare";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 

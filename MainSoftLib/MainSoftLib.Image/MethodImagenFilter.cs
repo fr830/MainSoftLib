@@ -1,13 +1,34 @@
-﻿using AForge.Imaging.Filters;
+﻿using System;
 using System.Drawing;
+using System.Reflection;
+using AForge.Imaging;
+using AForge.Imaging.Filters;
+using MainSoftLib.Logs;
 
 namespace MainSoftLib.Image
 {
     public class MethodImagenFilter
     {
+        static MethodsLogs Log = new MethodsLogs("MethodImagenFilter.log");
+
         public static Bitmap CopyBitmap(Bitmap source)
         {
             return new Bitmap(source);
+        }
+
+        public static float GetSimilarity(Bitmap image1, Bitmap image2)
+        {
+            try
+            {
+                ExhaustiveTemplateMatching tm = new ExhaustiveTemplateMatching(0);
+                TemplateMatch[] matchings = tm.ProcessImage(image1, image2);
+                return matchings[0].Similarity; // 0.95f)
+            }
+            catch (Exception ex)
+            {
+                Log.WriteLog(MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, TypeLog.Error, ex);
+                return 0;
+            }           
         }
 
         #region Filtros

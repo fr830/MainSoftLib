@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MainSoftLib.Logs;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using Tesseract;
 
@@ -9,6 +11,8 @@ namespace MainSoftLib.Captcha
 {
     public class MethodCaptchaSolver
     {
+        static MethodsLogs Log = new MethodsLogs("MethodCaptchaSolver.log");
+
         public static string OCR(Bitmap b)
         {
             try
@@ -35,7 +39,7 @@ namespace MainSoftLib.Captcha
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Erro: {ex.Message}");
+                Log.WriteLog(MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, TypeLog.Error, ex);
                 return null;
             }
         }

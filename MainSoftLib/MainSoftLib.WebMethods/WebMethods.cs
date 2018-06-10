@@ -17,7 +17,6 @@ namespace MainSoftLib.Web
         static MethodsLogs Log = new MethodsLogs("WebMethods.log");
 
 
-
         public static string GetResquest(string Url)
         {
             try
