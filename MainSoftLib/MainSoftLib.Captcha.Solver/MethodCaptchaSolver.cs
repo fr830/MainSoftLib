@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using Tesseract;
 
-namespace MainSoftLib.Captcha.Solver
+namespace MainSoftLib.Captcha
 {
     public class MethodCaptchaSolver
     {

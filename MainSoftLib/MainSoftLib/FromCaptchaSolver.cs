@@ -1,5 +1,5 @@
 ﻿
-using MainSoftLib.Captcha.Solver;
+using MainSoftLib.Captcha;
 using MainSoftLib.Image;
 using System;
 using System.Collections.Generic;
